@@ -33,11 +33,9 @@ public class CardTrick {
         
         //insert code to ask the user for Card value and suit, create their card
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a card value (1-13):");
-        int cardValue = sc.nextInt();
-        scanner.nextLine();
-        System.out.print("Enter a card suit from 0 to 3: ");
-        int suitValue = sc.nextInt();
+        Card luckyCard = new Card();
+        luckyCard.setValue = 10;
+        luckyCard.setSuit = "Diamonds";
         
         Card chosenCard = new Card();
         chosenCard.setValue(cardValue);
@@ -51,9 +49,7 @@ public class CardTrick {
                 break;
             }
         }
-        Card luckyCard = new Card();
-        luckyCard.setValue = 10;
-        luckyCard.setSuit = "Diamonds";
+       
         //Then report the result here
         if(found){
             System.out.println("Your card is in the magic hand");
