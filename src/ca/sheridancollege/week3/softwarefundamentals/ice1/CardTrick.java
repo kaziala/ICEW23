@@ -51,6 +51,9 @@ public class CardTrick {
                 break;
             }
         }
+        Card luckyCard = new Card();
+        luckyCard.setValue = 10;
+        luckyCard.setSuit = "Diamonds";
         //Then report the result here
         if(found){
             System.out.println("Your card is in the magic hand");
